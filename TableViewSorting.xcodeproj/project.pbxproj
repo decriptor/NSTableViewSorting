@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D829B3F1ACA237200AE4661 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D829B3E1ACA237200AE4661 /* MainViewController.m */; };
+		2DDC2AC61AC501D500DBC68A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDC2AC51AC501D500DBC68A /* AppDelegate.m */; };
+		2DDC2AC81AC501D500DBC68A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDC2AC71AC501D500DBC68A /* main.m */; };
+		2DDC2ACD1AC501D500DBC68A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDC2ACC1AC501D500DBC68A /* Images.xcassets */; };
+		2DDC2AD01AC501D500DBC68A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDC2ACE1AC501D500DBC68A /* Main.storyboard */; };
+		2DDC2ADC1AC501D600DBC68A /* TableViewSortingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDC2ADB1AC501D600DBC68A /* TableViewSortingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DDC2AD61AC501D600DBC68A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DDC2AB71AC501D500DBC68A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DDC2ABE1AC501D500DBC68A;
+			remoteInfo = TableViewSorting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D829B3D1ACA237200AE4661 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2D829B3E1ACA237200AE4661 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2DDC2ABF1AC501D500DBC68A /* TableViewSorting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSorting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDC2AC31AC501D500DBC68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDC2AC41AC501D500DBC68A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DDC2AC51AC501D500DBC68A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DDC2AC71AC501D500DBC68A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DDC2ACC1AC501D500DBC68A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2DDC2ACF1AC501D500DBC68A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DDC2AD51AC501D600DBC68A /* TableViewSortingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSortingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDC2ADA1AC501D600DBC68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDC2ADB1AC501D600DBC68A /* TableViewSortingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSortingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DDC2ABC1AC501D500DBC68A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDC2AD21AC501D600DBC68A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DDC2AB61AC501D500DBC68A = {
+			isa = PBXGroup;
+			children = (
+				2DDC2AC11AC501D500DBC68A /* TableViewSorting */,
+				2DDC2AD81AC501D600DBC68A /* TableViewSortingTests */,
+				2DDC2AC01AC501D500DBC68A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DDC2AC01AC501D500DBC68A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DDC2ABF1AC501D500DBC68A /* TableViewSorting.app */,
+				2DDC2AD51AC501D600DBC68A /* TableViewSortingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DDC2AC11AC501D500DBC68A /* TableViewSorting */ = {
+			isa = PBXGroup;
+			children = (
+				2DDC2AC41AC501D500DBC68A /* AppDelegate.h */,
+				2DDC2AC51AC501D500DBC68A /* AppDelegate.m */,
+				2DDC2ACC1AC501D500DBC68A /* Images.xcassets */,
+				2DDC2ACE1AC501D500DBC68A /* Main.storyboard */,
+				2DDC2AC21AC501D500DBC68A /* Supporting Files */,
+				2D829B3D1ACA237200AE4661 /* MainViewController.h */,
+				2D829B3E1ACA237200AE4661 /* MainViewController.m */,
+			);
+			path = TableViewSorting;
+			sourceTree = "<group>";
+		};
+		2DDC2AC21AC501D500DBC68A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DDC2AC31AC501D500DBC68A /* Info.plist */,
+				2DDC2AC71AC501D500DBC68A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DDC2AD81AC501D600DBC68A /* TableViewSortingTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DDC2ADB1AC501D600DBC68A /* TableViewSortingTests.m */,
+				2DDC2AD91AC501D600DBC68A /* Supporting Files */,
+			);
+			path = TableViewSortingTests;
+			sourceTree = "<group>";
+		};
+		2DDC2AD91AC501D600DBC68A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DDC2ADA1AC501D600DBC68A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DDC2ABE1AC501D500DBC68A /* TableViewSorting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDC2ADF1AC501D600DBC68A /* Build configuration list for PBXNativeTarget "TableViewSorting" */;
+			buildPhases = (
+				2DDC2ABB1AC501D500DBC68A /* Sources */,
+				2DDC2ABC1AC501D500DBC68A /* Frameworks */,
+				2DDC2ABD1AC501D500DBC68A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewSorting;
+			productName = TableViewSorting;
+			productReference = 2DDC2ABF1AC501D500DBC68A /* TableViewSorting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DDC2AD41AC501D600DBC68A /* TableViewSortingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDC2AE21AC501D600DBC68A /* Build configuration list for PBXNativeTarget "TableViewSortingTests" */;
+			buildPhases = (
+				2DDC2AD11AC501D600DBC68A /* Sources */,
+				2DDC2AD21AC501D600DBC68A /* Frameworks */,
+				2DDC2AD31AC501D600DBC68A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DDC2AD71AC501D600DBC68A /* PBXTargetDependency */,
+			);
+			name = TableViewSortingTests;
+			productName = TableViewSortingTests;
+			productReference = 2DDC2AD51AC501D600DBC68A /* TableViewSortingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DDC2AB71AC501D500DBC68A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Stephen Shaw";
+				TargetAttributes = {
+					2DDC2ABE1AC501D500DBC68A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2DDC2AD41AC501D600DBC68A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 2DDC2ABE1AC501D500DBC68A;
+					};
+				};
+			};
+			buildConfigurationList = 2DDC2ABA1AC501D500DBC68A /* Build configuration list for PBXProject "TableViewSorting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DDC2AB61AC501D500DBC68A;
+			productRefGroup = 2DDC2AC01AC501D500DBC68A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DDC2ABE1AC501D500DBC68A /* TableViewSorting */,
+				2DDC2AD41AC501D600DBC68A /* TableViewSortingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DDC2ABD1AC501D500DBC68A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDC2ACD1AC501D500DBC68A /* Images.xcassets in Resources */,
+				2DDC2AD01AC501D500DBC68A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDC2AD31AC501D600DBC68A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DDC2ABB1AC501D500DBC68A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDC2AC81AC501D500DBC68A /* main.m in Sources */,
+				2D829B3F1ACA237200AE4661 /* MainViewController.m in Sources */,
+				2DDC2AC61AC501D500DBC68A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDC2AD11AC501D600DBC68A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDC2ADC1AC501D600DBC68A /* TableViewSortingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DDC2AD71AC501D600DBC68A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DDC2ABE1AC501D500DBC68A /* TableViewSorting */;
+			targetProxy = 2DDC2AD61AC501D600DBC68A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DDC2ACE1AC501D500DBC68A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDC2ACF1AC501D500DBC68A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DDC2ADD1AC501D600DBC68A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2DDC2ADE1AC501D600DBC68A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2DDC2AE01AC501D600DBC68A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TableViewSorting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DDC2AE11AC501D600DBC68A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TableViewSorting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2DDC2AE31AC501D600DBC68A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableViewSortingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewSorting.app/Contents/MacOS/TableViewSorting";
+			};
+			name = Debug;
+		};
+		2DDC2AE41AC501D600DBC68A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableViewSortingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewSorting.app/Contents/MacOS/TableViewSorting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DDC2ABA1AC501D500DBC68A /* Build configuration list for PBXProject "TableViewSorting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDC2ADD1AC501D600DBC68A /* Debug */,
+				2DDC2ADE1AC501D600DBC68A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDC2ADF1AC501D600DBC68A /* Build configuration list for PBXNativeTarget "TableViewSorting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDC2AE01AC501D600DBC68A /* Debug */,
+				2DDC2AE11AC501D600DBC68A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDC2AE21AC501D600DBC68A /* Build configuration list for PBXNativeTarget "TableViewSortingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDC2AE31AC501D600DBC68A /* Debug */,
+				2DDC2AE41AC501D600DBC68A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DDC2AB71AC501D500DBC68A /* Project object */;
+}

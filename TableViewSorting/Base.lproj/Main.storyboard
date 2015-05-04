@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -655,6 +655,21 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="0A0A537F-C48D-42B4-B10B-658C15A3A29E" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="xRm-8U-Wsq">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="3tJ-rl-qKP"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="NB1-CI-tCz"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Xg8-Vw-kk1"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="XaR-xa-Z9e"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="DWD-Um-ycU"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="3tJ-rl-qKP"/>
+                                <toolbarItem reference="NB1-CI-tCz"/>
+                                <toolbarItem reference="DWD-Um-ycU"/>
+                                <toolbarItem reference="Xg8-Vw-kk1"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                     </window>
                     <connections>
                         <segue destination="AHI-eK-dU9" kind="relationship" relationship="window.shadowedContentViewController" id="Ibf-XB-aUE"/>
@@ -662,7 +677,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="250"/>
+            <point key="canvasLocation" x="75" y="297"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="UWT-1D-n3l">
@@ -673,13 +688,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-Tl-4gQ">
-                                <rect key="frame" x="0.0" y="0.0" width="492" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="492" height="265"/>
                                 <clipView key="contentView" id="l8x-dO-7JV">
                                     <rect key="frame" x="1" y="17" width="238" height="117"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="WGy-AQ-0oD" id="3K8-Di-jK0">
-                                            <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="490" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -743,7 +758,7 @@
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="V5r-ns-H7J">
-                                    <rect key="frame" x="1" y="31.003899574279785" width="46.00860595703125" height="16"/>
+                                    <rect key="frame" x="1" y="31.003899574279785" width="46" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="QF7-3d-ZBH">
@@ -755,12 +770,35 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mt5-9U-tcy">
+                                <rect key="frame" x="0.0" y="263" width="492" height="37"/>
+                                <subviews>
+                                    <button toolTip="Hello, I'm a button!" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8HT-mt-Tyg">
+                                        <rect key="frame" x="205" y="1" width="82" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="t29-e5-BcB">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <action selector="ButtonClicked:" target="AHI-eK-dU9" id="G1R-Sd-4Xh"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="8HT-mt-Tyg" secondAttribute="centerX" id="2bq-hX-cCx"/>
+                                    <constraint firstAttribute="centerY" secondItem="8HT-mt-Tyg" secondAttribute="centerY" id="mvN-wd-MBj"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ucU-Tl-4gQ" secondAttribute="bottom" id="6EI-hz-SYe"/>
                             <constraint firstItem="ucU-Tl-4gQ" firstAttribute="leading" secondItem="r5x-Oj-bqF" secondAttribute="leading" id="EI3-Of-n2u"/>
-                            <constraint firstItem="ucU-Tl-4gQ" firstAttribute="top" secondItem="r5x-Oj-bqF" secondAttribute="top" id="ERP-nH-92v"/>
+                            <constraint firstItem="ucU-Tl-4gQ" firstAttribute="top" secondItem="r5x-Oj-bqF" secondAttribute="top" constant="35" id="ERP-nH-92v"/>
+                            <constraint firstAttribute="trailing" secondItem="Mt5-9U-tcy" secondAttribute="trailing" id="b91-3F-Tmv"/>
+                            <constraint firstItem="Mt5-9U-tcy" firstAttribute="leading" secondItem="r5x-Oj-bqF" secondAttribute="leading" id="fgN-QA-moF"/>
+                            <constraint firstItem="ucU-Tl-4gQ" firstAttribute="top" secondItem="Mt5-9U-tcy" secondAttribute="bottom" constant="-2" id="itO-F4-3nG"/>
                             <constraint firstAttribute="trailing" secondItem="ucU-Tl-4gQ" secondAttribute="trailing" id="kcq-8e-75K"/>
+                            <constraint firstItem="Mt5-9U-tcy" firstAttribute="top" secondItem="r5x-Oj-bqF" secondAttribute="top" id="ybV-PS-309"/>
                         </constraints>
                     </view>
                     <connections>
@@ -769,7 +807,7 @@
                 </viewController>
                 <customObject id="apq-wp-szg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="667"/>
+            <point key="canvasLocation" x="75" y="726"/>
         </scene>
     </scenes>
 </document>

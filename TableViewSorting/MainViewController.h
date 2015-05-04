@@ -11,6 +11,7 @@
 @interface MainViewController : NSViewController <NSTableViewDelegate, NSTableViewDataSource>
 
 @property (weak) IBOutlet NSTableView *tableView;
+- (IBAction)ButtonClicked:(id)sender;
 
-@property NSArray *data;
+@property NSMutableArray *data;
 @end

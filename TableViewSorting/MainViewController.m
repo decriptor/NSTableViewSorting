@@ -36,11 +36,24 @@
 {
     [self buildDataArray];
     [self setupTableView];
+    
+    [NSTimer scheduledTimerWithTimeInterval:0.7
+                                     target:self
+                                   selector:@selector(reloadData)
+                                   userInfo:nil
+                                    repeats:YES];
+}
+
+-(void)reloadData
+{
+    [data addObject:
+     [NSDictionary dictionaryWithObjectsAndKeys:@"1111",@"First",@"1111",@"Second",@"1111",@"Third",@"1111",@"Fourth", nil]];
+    [tableView reloadData];
 }
 
 -(void)buildDataArray
 {
-    data = [NSArray arrayWithObjects:
+    data = [NSMutableArray arrayWithObjects:
                       [NSDictionary dictionaryWithObjectsAndKeys:@"1002",@"First",@"1002",@"Second",@"1003",@"Third",@"1004",@"Fourth", nil],
                       [NSDictionary dictionaryWithObjectsAndKeys:@"2005",@"First",@"2002",@"Second",@"2003",@"Third",@"2004",@"Fourth", nil],
                       [NSDictionary dictionaryWithObjectsAndKeys:@"3004",@"First",@"3002",@"Second",@"3003",@"Third",@"3004",@"Fourth", nil],
@@ -62,10 +75,11 @@
     NSTableColumn *secondColumn = [tableView tableColumnWithIdentifier:@"Second"];
     
     NSSortDescriptor *firstColumnDescriptor = [[NSSortDescriptor alloc] initWithKey:@"First" ascending:YES comparator:comparisonBlock];
-    NSSortDescriptor *secondColumnDescriptor = [[NSSortDescriptor alloc] initWithKey:@"Second" ascending:YES selector:@selector(compareInts:)];
-    
+    NSSortDescriptor *secondColumnDescriptor = [[NSSortDescriptor alloc] initWithKey:@"Second" ascending:YES selector:@selector(localizedCompare:)];
     [firstColumn  setSortDescriptorPrototype:firstColumnDescriptor];
     [secondColumn setSortDescriptorPrototype:secondColumnDescriptor];
+    
+    [tableView setDoubleAction:@selector(doubleAction:)];
 }
 
 NSComparator comparisonBlock = ^(id first, id second)
@@ -80,6 +94,23 @@ NSComparator comparisonBlock = ^(id first, id second)
     
     return NSOrderedSame;
 };
+
+-(void)doubleAction:(id)sender
+{
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert addButtonWithTitle:@"OK"];
+    [alert setMessageText:@"Double Clicked"];
+    [alert setInformativeText:@"You double clicked me!"];
+    [alert setAlertStyle:NSWarningAlertStyle];
+
+    [alert beginSheetModalForWindow:[[[NSApplication sharedApplication] windows] objectAtIndex:0] completionHandler:nil];
+}
+
+- (IBAction)ButtonClicked:(id)sender
+{
+    [self buildDataArray];
+    [tableView reloadData];
+}
 
 -(NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
@@ -99,4 +130,5 @@ NSComparator comparisonBlock = ^(id first, id second)
     self.data = [self.data sortedArrayUsingDescriptors:[aTableView sortDescriptors]];
     [aTableView reloadData];
 }
+
 @end
